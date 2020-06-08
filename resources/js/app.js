@@ -1,5 +1,3 @@
-// 
-
 const country_name_element=document.querySelector(".country .name");
 const total_cases_element=document.querySelector(".total-cases .value");
 const new_cases_element=document.querySelector(".total-cases .new-value");
@@ -13,21 +11,10 @@ let app_data=[],
 	recovered_list=[],
 	deaths_list=[],
 	dates=[];
-
-// let country_code= geoplugin_countryCode();
 	  
-let user_country="India";	
-// var flag=1;
-// country_list.forEach(country =>{
-// 	if(country.code==country_code){
-// 		user_country=country.name;
-// 		flag=0;
-// 	}
-// });
+//Default country will be India
 
-// if(flag==1){
-// 	user_country=country_code;
-// }
+let user_country="India";	
 
 console.log(user_country);
 
@@ -43,7 +30,6 @@ fetch(`https://corona.lmao.ninja/v2/countries/${user_country}`)
 })
 .then((data)=>{
 	document.getElementById("countryy").innerHTML=data.country;
-	// document.getElementById("flag").src = data.countryInfo.flag;
 	document.getElementById("valuee").innerHTML=data.cases;
 	document.getElementById("new-valuee").innerHTML=data.todayCases;
 	document.getElementById("deathss").innerHTML=data.deaths;
