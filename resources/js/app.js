@@ -16,7 +16,7 @@ let app_data=[],
 
 // let country_code= geoplugin_countryCode();
 	  
-let user_country;	
+let user_country="India";	
 // var flag=1;
 // country_list.forEach(country =>{
 // 	if(country.code==country_code){
@@ -43,7 +43,7 @@ fetch(`https://corona.lmao.ninja/v2/countries/${user_country}`)
 })
 .then((data)=>{
 	document.getElementById("countryy").innerHTML=data.country;
-	document.getElementById("flag").src = data.countryInfo.flag;
+	// document.getElementById("flag").src = data.countryInfo.flag;
 	document.getElementById("valuee").innerHTML=data.cases;
 	document.getElementById("new-valuee").innerHTML=data.todayCases;
 	document.getElementById("deathss").innerHTML=data.deaths;
