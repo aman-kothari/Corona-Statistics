@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.00, minimum-scale=1.00, maximum-scale=1.00, user-scalable=no"/>
+    <link rel="stylesheet" href="resources\css\style.css">
+    <title>COVID-19 Statistics</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="resources\img\logo.png" alt="COVID-19 Stats">
+            <p>COVID-19 <br>Statistics</p>
+        </div>
+        <nav>
+            <ul class="heading">
+           
+                <li > <a href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019/advice-for-public" class="blackborder">Prevention</a></li>
+                
+                <li > <a href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019/question-and-answers-hub/q-a-detail/q-a-coronaviruses#:~:text=symptoms" class="blackborder">Symptoms</a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+    <main>
+     
+        <div class="stats">
+            <div class="latest-report">
+            <div class="country">
+                <div class="name"><span id="countryy"></span > <img src="" id="flag"></div>
+                <div class="change-country">Change</div>
+                <div class="search-country hide">
+                    <div class="search-box">
+                        <input type="text" id="search-input" placeholder="Search Country...">
+                        <img class="close" src="./resources/img/close.svg" alt="">
+                    </div>
+                    <div class="country-list">
+                    
+                    </div>
+                </div>
+            </div>
+         
+            <div class="total-cases">
+                <div class="title" >Total Cases</div>
+                <div class="value"><span id="valuee"></span></div>
+                <div class="new-value">+<span id="new-valuee"></span></div>
+            </div>
+
+            <div class="recovered">
+                <div class="title">Recovered</div>
+                <div class="value"><span id="recoveredd"></span></div>
+                <div class="new-value">+<span id="new-recovered"></span></div>
+            </div>
+            
+            <div class="deaths">
+                <div class="title">Deaths</div>
+                <div class="value"><span id="deathss"></span></div>
+                <div class="new-value">+<span id="new-deathss"></span></div>
+            </div>
+
+            <div class="active">
+            
+                <div class="title">Active Cases</div>
+                <div class="value"><span id="actives"></span></div>
+            
+            </div>
+
+            <div class="test">
+            
+                <div class="title">Total Tests Done</div>
+                <div class="value"><span id="tests"></span></div>
+            
+            </div>
+
+            <div class="critical">
+            
+                <div class="title">Critical Cases</div>
+                <div class="value"><span id="critic"></span></div>
+            
+            </div>
+        </div>
+        
+        </div>
+    
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="copyright">
+                <p>Copyright © 2020 Aman Kothari</p>
+                <p>All Rights Reserved</p>
+                <p>All the stats in this website are retrieved from third party source. This website doesn't contradict the government generated figure in any sense.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- <script language="JavaScript" src="http://www.geoplugin.net/javascript.gp" type="text/javascript"></script> -->
+    <script src="resources/js/countries.js"></script>
+    <script src="resources/js/app.js"></script>
+</body>
+</html>
