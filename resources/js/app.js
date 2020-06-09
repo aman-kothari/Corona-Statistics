@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 
+=======
+>>>>>>> 8aff2f9e3f3bc451fbf19f2080932ed92ca55251
 const country_name_element=document.querySelector(".country .name");
 const total_cases_element=document.querySelector(".total-cases .value");
 const new_cases_element=document.querySelector(".total-cases .new-value");
@@ -12,10 +15,18 @@ let app_data=[],
 	recovered_list=[],
 	deaths_list=[],
 	dates=[];
+<<<<<<< HEAD
 
 //Default country is India
 	
 let user_country="India";	
+=======
+	  
+//Default country will be India
+
+let user_country="India";	
+
+>>>>>>> 8aff2f9e3f3bc451fbf19f2080932ed92ca55251
 console.log(user_country);
 
 function fetchData(user_country){
