@@ -10,7 +10,7 @@
 
 html{
     height: 100%;
-    font-size: 16px;
+    font-size: 116%;
     min-zoom: 0.8;
 }
 
@@ -31,6 +31,12 @@ body {
     0%{
         opacity: 0;
     }
+    25%{
+        opacity: 0.25;
+    }
+    50%{
+        opacity: 0.5;
+    }
     
     100%{
         opacity: 1;
@@ -41,11 +47,13 @@ header{
     display:flex;
     align-items: center;
     justify-content: center;
-    width: auto;
+    width: 100%;
     height: 60%;
+    min-width: 1200px;
+
     border-bottom: 4px solid wheat;
     margin: 0 auto;
-    background-color: rgb(248, 234, 31); 
+    background-color: #2196f3;
     font-weight: bolder;
 }
 
@@ -94,17 +102,21 @@ nav ul li a{
 }
 
 main{
-    max-width: auto;
+
+    width: 100%;
     height: auto;
+    min-width: 1200px;
+
     margin: 0 auto;
 }
 
 .stats{
-    width: auto;
-    
+    width: 100%;
+    min-width: 1200px;
+
     height:  auto;
-    min-width: 800px;
-    position: static;
+  
+    position: relative;
     background-image: linear-gradient(rgba(31, 27, 27, 0.9),rgba(31, 27, 27, 0.9)), url('../img/bg1.jpg');
     border: wheat;
     background-size: cover ;
@@ -112,7 +124,7 @@ main{
 
 .latest-report{
     display: grid;
-    width: 80%;
+    width: 90%;
     height: auto;
 
     color: white;
@@ -148,8 +160,8 @@ main{
 .total-cases,
 .recovered,
 .deaths, .active ,.test, .critical{
-    height: 120px;
-
+    height: auto;
+    width: 33%;
 }
 
 .test{
@@ -157,21 +169,30 @@ main{
 }
 
 .total-cases .title{
-     color: #2196f3;
+    color: rgb(248, 234, 31); 
      transition: 0.0s;
+     width: 200%;
+
 }
 
 
 .total-cases .title{
     margin-top: auto;
     color: black;
-        background: #2196f3;
-        box-shadow: 0 0 10px #2196f3, 0 0 10px #2196f3 ,0 0 10px #2196f3;
+    width: 200%;
+    min-width: 200px;
+
+    background-color: rgb(248, 234, 31); 
+
+        box-shadow: 0 0 10px #faee47, 0 0 10px #faee47 ,0 0 10px #2196f3;
     
 }
 
 .recovered .title{
     margin-top: auto;
+    width: 200%;
+    min-width: 200px;
+
     color: black;
         background: #74eb05;
         box-shadow: 0 0 10px #0ef519, 0 0 10px #5df321 ,0 0 10px #2196f3;
@@ -180,6 +201,9 @@ main{
 
 .deaths .title{
     margin-top: auto;
+    width: 200%;
+    min-width: 200px;
+
     color: black;
         background: #df1313;
         box-shadow: 0 0 10px #f10808, 0 0 10px hsl(0, 70%, 56%) ,0 0 10px #2196f3;
@@ -190,7 +214,9 @@ main{
     font-size:2.2em;
     color: turquoise;
     font-weight: bold;
-    
+    width: 200%;
+    min-width: 200px;
+
         color: black;
             background: #e83dff;
             box-shadow: 0 0 10px #fd56d3, 0 0 10px #f321e2 ,0 0 10px #2196f3;
@@ -201,13 +227,18 @@ main{
 .active .title{
     margin-top: 15px;
     color: black;
-        background: #fda500;
+    width: 200%;
+min-width: 200px;
+        background: silver;
         margin-left: 0px;
-        box-shadow: 0 0 10px #ff9100, 0 0 20px #ff9100 ,0 0 10px #ff9100;   
+        box-shadow: 0 0 10px silver, 0 0 20px silver,0 0 10px silver;   
 }
 .test .title{
     margin-top: 100px;
     /* padding-top: 100px; */
+    width: 200%;
+    min-width: 200px;
+
     color: black;
         background: #00fde8;
         margin-left: 0px;
@@ -218,32 +249,39 @@ main{
     margin-top: 100px;
     /* padding-top: 100px; */
     color: black;
-        background: silver;
+    width: 200%;
+    min-width: 200px;
+
+        background: #fda500;
         margin-left: 0px;
         margin-top: 15px;
-        box-shadow: 0 0 10px silver, 0 0 20px  silver ,0 0 10px  silver;   
+        box-shadow: 0 0 10px #fda500, 0 0 20px  #fda500 ,0 0 10px  #fda500;   
 }
 
 .active .value{
-    font-size: 2.5em;
+    font-size: 2.2em;
     font-weight: bold;
-    color:  #ff9100 ;
+    color:  silver ;
     margin-top: 7px;
     padding-top: 10px;
     padding-bottom: 8px;
 }
 .test .value{
-    font-size: 2.5em;
+    font-size: 2.2em;
     font-weight: bold;
     color:   #00ffff ;
     margin-top: 7px;
     padding-top: 1px;
+    width: 200%;
+
     padding-bottom: 8px;
 }
 .critical .value{
-    font-size: 2.5em;
+    font-size: 2.2em;
     font-weight: bold;
-    color:  silver ;
+    width: 32%;
+    
+    color:  #fda500 ;
     margin-top: 7px;
     padding-top: 1px;
     padding-bottom: 8px;
@@ -259,6 +297,8 @@ main{
     padding-top: 9px;
     cursor: pointer;
      transition: 0.2s;
+     min-width: 200px;
+
 }
 
 .change-country :hover{
@@ -274,17 +314,18 @@ main{
     font-size: 2.5em;
     font-weight: bold;
     padding-top: 10px;
-   
+    width: 32%;
     padding-bottom: 8px;
 }
 #active{
-    color:  #ff9100 ;
+    color:  red ;
 }
 .recovered .value{
     font-size: 2.5em;
     font-weight: bold;
     color: greenyellow;
     padding-top: 10px;
+    width: 32%;
     padding-bottom: 8px;
 }
 .deaths .value{
@@ -292,6 +333,7 @@ main{
     font-weight: bold;
     color: red;
     padding-top: 10px;
+    width: 32%;
     padding-bottom: 8px;
 }
 
@@ -373,12 +415,15 @@ main{
 }
 
 footer{
-    max-width: auto;
-    min-height: 100px;
-    width: auto;
+
+    min-height: auto;
+    width: 100%;
     margin-top: 0%;
+    min-width: 1200px;
+
+    padding-left: 2%;
     border-top: 2px solid white;
-    background-color: rgb(248, 234, 31); 
+    background-color: #2196f3;
 }
 
 .footer container{
@@ -393,9 +438,9 @@ footer{
 }
 
 
-/* when the webpage is viewed in mobile phone/ smart phone  */
+/* when the webpage is viewed in mobile phone/smart phone  */
 
-@media screen and (max-width:700px){
+@media screen and (max-width:842px){
 
     html,body{
         width: 100%;
@@ -409,9 +454,11 @@ footer{
         flex-direction: column;
         align-items: flex-start;
     }
-    .main{
+    main{
         
-        height: 60%;
+        /* height: 100%; */
+        min-width: auto;
+
 
     }
 
@@ -419,8 +466,10 @@ footer{
         height:60%;
         padding-top: 50px;
     position: static;
-    background-image: linear-gradient(rgba(31, 27, 27, 0.9),rgba(31, 27, 27, 0.9)), url('../img/bg.jpg');
+    background-image: linear-gradient(rgba(15, 15, 15, 0.9),rgba(10, 8, 8, 0.9)), url('../img/bg.jpg');
     background-size: cover;
+    min-width: auto;
+
     background-position: center;
     }
 
@@ -431,6 +480,7 @@ footer{
         height: 150px;
         float: left;
         align-items: flex-start;
+        min-width: auto;
     }
 
     .logo{
@@ -468,30 +518,40 @@ footer{
     body {
         border: 1px solid transparent;
     }
-
+    .deaths .title{
+        margin-top: 15%;
+    }
+    
+    .total-cases .title{
+        margin-top: 20%;
+    }
+    
+    .recovered .title{
+        margin-top: 15%;
+    }
     .active .title{
-        margin-top: 0px;
+        margin-top: 15%;
         color: black;
             background: #fda500;
             margin-left: 0px;
             box-shadow: 0 0 10px #ff9100, 0 0 20px #ff9100 ,0 0 10px #ff9100;   
     }
     .test .title{
-        margin-top: 0px;
+        margin-top: 15%;
         /* padding-top: 100px; */
         color: black;
             background: #00fde8;
             margin-left: 0px;
-            margin-top: 0px;
+            margin-top: 15%;
             box-shadow: 0 0 10px #00ffff, 0 0 20px  #00ffff ,0 0 10px  #00ffff;   
     }
     .critical .title{
-        margin-top: 0px;
+        margin-top: 15%;
         /* padding-top: 100px; */
         color: black;
             background: silver;
             margin-left: 0px;
-            margin-top: 0px;
+            margin-top: 15%;
             box-shadow: 0 0 10px silver, 0 0 20px  silver ,0 0 10px  silver;   
     }
     .latest-report div:nth-child(5){
@@ -507,5 +567,12 @@ footer{
     .latest-report div:nth-child(7){
         margin-top: 00%;
         padding-top: 00px;
+    }
+
+    .footer{
+        padding-left: 2%;
+        min-width: auto;
+
+        margin-top: 0%;
     }
 }
