@@ -211,7 +211,7 @@ main{
 }
 
 .name{
-    font-size:2.2em;
+    font-size:135%;
     color: turquoise;
     font-weight: bold;
     width: 200%;
@@ -525,7 +525,10 @@ footer{
     .total-cases .title{
         margin-top: 20%;
     }
-    
+    .total-cases .value{
+        color: rgb(248, 234, 31); 
+
+    }
     .recovered .title{
         margin-top: 15%;
     }
@@ -535,6 +538,10 @@ footer{
             background: #fda500;
             margin-left: 0px;
             box-shadow: 0 0 10px #ff9100, 0 0 20px #ff9100 ,0 0 10px #ff9100;   
+    }
+    .active .value{
+        color: #fda500;
+
     }
     .test .title{
         margin-top: 15%;
@@ -553,6 +560,9 @@ footer{
             margin-left: 0px;
             margin-top: 15%;
             box-shadow: 0 0 10px silver, 0 0 20px  silver ,0 0 10px  silver;   
+    }
+    .critical .value{
+        color:silver;
     }
     .latest-report div:nth-child(5){
         margin-top: 00%;
