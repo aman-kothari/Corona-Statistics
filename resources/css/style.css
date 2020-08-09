@@ -9,7 +9,9 @@
 
 
 html{
-    height: 100%;
+    height: auto;
+    width: 100%;
+    max-width: 100%;
     font-size: 116%;
     min-zoom: 0.8;
 }
@@ -78,6 +80,8 @@ nav ul{
     align-items: center;
 }
 nav ul li{
+    padding-top: 5%;
+    padding-bottom: 5%;
     list-style: none;
     color: black;
     display: flex;
@@ -95,6 +99,7 @@ nav ul li{
 nav ul li a{
     text-decoration: none;
     padding-left: 20px;
+    font-size: larger;
     color: white;
     background-color: black;
     text-shadow: 1.1px white;
@@ -416,18 +421,24 @@ min-width: 200px;
 
 footer{
 
-    min-height: auto;
+    min-height: 145px;
     width: 100%;
     margin-top: 0%;
     min-width: 1200px;
-
+    /* height: 170px; */
     padding-left: 2%;
     border-top: 2px solid white;
     background-color: #2196f3;
 }
 
-.footer container{
+.footer-container{
+    padding-top: 1%;
+    padding-left: 2%;
+    padding-right: 5%;
+    padding-bottom: 1%;
     text-align: center;
+    /* background-color: brown; */
+    /* height: a; */
     display: flex;
 }
 .copyright{
@@ -435,12 +446,13 @@ footer{
     font-style: bold;
     font-weight: bold;
     flex-direction: row;
+    height: auto;
 }
 
 
 /* when the webpage is viewed in mobile phone/smart phone  */
 
-@media screen and (max-width:842px){
+@media all and (max-width:842px){
 
     html,body{
         width: 100%;
@@ -477,7 +489,7 @@ footer{
         margin-top: 0px;
         padding-top: 0px;
         width: 100%;
-        height: 150px;
+        height: 170px;
         float: left;
         align-items: flex-start;
         min-width: auto;
@@ -494,6 +506,14 @@ footer{
         float: left;
         margin-left: -200px;
 
+    }
+    nav ul li{
+        padding-top: 0%;
+        padding-bottom: 0%;
+        list-style: none;
+        color: black;
+        display: flex;
+       
     }
 
     .heading{
@@ -579,10 +599,27 @@ footer{
         padding-top: 00px;
     }
 
-    .footer{
-        padding-left: 2%;
+    footer{
+        margin-top: 0px;
+        padding-top: 0  px;
+        width: 100%;
+        height: auto;
+        background-color: #2196f3;
+        float: left;
+        align-items: flex-start;
         min-width: auto;
-
-        margin-top: 0%;
+    }
+    .copyright {
+        padding-left: 5%;
+        padding-right: 5%;
+        margin-top: 0px;
+        padding-top: 0px;
+        background-color: #2196f3;
+        width: 100%;
+        height: 150%;
+        float: left;
+        align-items: flex-start;
+        min-width: auto;
+        max-width: 500px;
     }
 }
